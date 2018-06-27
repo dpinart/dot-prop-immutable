@@ -164,7 +164,6 @@ function propToArray(prop) {
 		return ret;
 	}, []);
 }
-if(module){
 module.exports = {
 	set: set,
 	get: get,
@@ -172,13 +171,3 @@ module.exports = {
 	toggle: toggle,
 	merge: merge
 };
-	
-}
-const dotPropImmutable = {
-	set: set,
-	get: get,
-	delete: _delete,
-	toggle: toggle,
-	merge: merge
-};
-export default dotPropImmutable;
